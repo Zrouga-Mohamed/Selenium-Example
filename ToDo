@@ -1,0 +1,40 @@
+0. Get a VirtualBox : VM installed ( Ubuntu  18.04 - 20.04 )
+    - Docker Against VM : non persistent ( unless share volume )
+1. Scrape Youtube channels ( subscrpbtion )
+Difficulty : 
+    - JS rendred ==> scraper with JS CAPABILITIES
+    - Scraping tools :
+        * Selenium  : OK
+        * Requests ( python package ) : X 
+        * Others : X
+    - Ban : 
+        * Tor ( privoxy ) : ( 403 - 413 ) proxy rotation 
+    - Recaptcha : Renew the ip + change User Agent
+
+
+----
+Steps :
+Create VENV
+---
+$ python3 -m virtualenv -p python3 .
+$ source bin/activate
+$ pip install -r requirements.txt
+-----
+Browse Youtube :
+------------
+driver.page_source ==> html source for the youtube page 
+
+HTML ------> Selenium + BS4 ( beautiful Soup)  CSS
+        |____> lxml xpath
+
+
+
+
+To search in the Net :
+
+$ (Normal User)
+# (Root User)
+
+ChromeDriver == Gecko driver 
+ 
+Python --> driver webdriver_manager  --> chrome  
